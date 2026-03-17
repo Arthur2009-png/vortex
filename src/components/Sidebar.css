@@ -1,0 +1,30 @@
+.Vortex_Sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: darkslategray;
+    border-right: 1px solid azure;
+    padding: 20px;
+}
+
+.logo {
+    color: white;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 10px;
+    color: azure;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    
+}
+
+.nav-item:active {
+    background-color: rgb(70, 108, 108);
+    color: rgb(135, 224, 224);
+}
