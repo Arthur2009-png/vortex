@@ -1,20 +1,19 @@
-import "./Sidebar.css"
-import { LayoutDashboard, Gamepad2, User } from 'lucide-react'
-export function Sidebar() {
-    return (
-        <aside className="Vortex_Sidebar">
+import './Sidebar.css'
+import { LayoutDashboard, Gamepad2, User } from 'lucide-react';
 
-            <h2 className="logo">VORTEX</h2>
+export function Sidebar(){
+    return(
+        <aside className="vortex-sidebar">
+            <h2 className="logo">VORTEX_</h2>
 
-            <div>
-                <div className="nav-item" active=""> <LayoutDashboard size={20} />DashBoard </div>
-                <div className="nav-item" > <Gamepad2 size={20} />Meus jogos</div>
-                <div className="nav-item" active=""> <User size={20} />Perfil</div>
-            </div>
+            <nav>
+                <div className="nav-item active"> <LayoutDashboard size={20} />Dashboard</div>
+                <div className="nav-item"> <Gamepad2 size={20} />Meus Jogos</div>
+                <div className="nav-item"> <User size={20} />Perfil</div>
 
+            </nav>
 
         </aside>
-    );
+    )
 }
 
-export default Sidebar

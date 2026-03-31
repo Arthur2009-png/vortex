@@ -1,33 +1,26 @@
 import './Header.css';
-import { Bell, Zap } from "lucide-react";
+import {Bell, Zap} from 'lucide-react';
 
-export function Header() {
-    return (
-        <header className="Vortex_Header">
+export function Header(){
+    return(
+        <header className='vortex-header'>
             <div className="user-info">
-                <h4>Bem vindo <span className="destaque">José</span></h4>
-                <p>Status: online no level 01</p>
+                <h3>Bem-vindo, <span className="destaque">Ricardo</span></h3>
+                <p>Status: Online no Level 01</p>
             </div>
 
-            <div className="Header_actions">
+            <div className="header-actions">
 
                 <div className="badge">
-                    <Zap size={20} />
-                    <span>Pro player</span>
+                    <Zap size={14}/>
+                    <span>PRO PLAYER</span>
                 </div>
-
                 <button className="notificacoes">
-                    <Bell />
+                    <Bell size={20}/>
                 </button>
 
             </div>
 
-
         </header>
-
-
     )
 }
-
-export default Header
-

@@ -1,12 +1,11 @@
-
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Inter', sans-serif;
 }
 
 body{
-  background-color: rgb(76, 136, 136);
-  color: aliceblue;
+  background-color: #020617;
+  color: white;
 }
