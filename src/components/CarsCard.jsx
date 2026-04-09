@@ -1,5 +1,4 @@
-import "./GameCard.css";
-import { Play } from "lucide-react";
+import "./CarsCard.css";
 
 export function GameCard({ title, category, banner }) {
   return (
@@ -9,9 +8,6 @@ export function GameCard({ title, category, banner }) {
       <div className="card-info">
         <h4>{title}</h4>
         <p>{category}</p>
-        <button className="play-btn">
-          <Play size={14} fill="white" />
-        </button>
       </div>
     </div>
   );
