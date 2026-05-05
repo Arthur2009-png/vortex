@@ -3,12 +3,15 @@ import { Sidebar } from "./components/Sidebar";
 import { Header } from "./components/Header";
 import { gamesData } from "./data/games";
 import { GameCard } from "./components/GameCard";
+import { GameModal } from "./components/GameModal"
 import "./App.css";
 
 function App() {
   const [search, setSearch] = useState('');
   const [activeTab, setActiveTab] = useState("dash");
   const [favorites, setFavorites] = useState([]); 
+
+  const [selectedGame, setSelectedGame] = useState(null);
 
   const filteredGames = gamesData
   .filter((game) => activeTab === "dash" || favorites.includes(game.id))
@@ -50,6 +53,9 @@ const toggleFavorite = (id) => {
                 banner={g.banner}
                 isFavorite={favorites.includes(g.id)}
                 onFavorite={() => toggleFavorite(g.id)}
+
+
+                onPlay={()=> setSelectedGame(g)}
               />
             ))
            ) : (
@@ -59,6 +65,7 @@ const toggleFavorite = (id) => {
           </div>
         </div>
       </main>
+      <GameModal game={selectedGame} onClose={()=> setSelectedGame(null)}/>
     </div>
   );
 }
