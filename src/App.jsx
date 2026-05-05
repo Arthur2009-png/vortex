@@ -55,7 +55,7 @@ const toggleFavorite = (id) => {
                 onFavorite={() => toggleFavorite(g.id)}
 
 
-                onPlay={()=> setSelectedGame(g)}
+                onPlay={() => setSelectedGame(g)}
               />
             ))
            ) : (
@@ -65,7 +65,7 @@ const toggleFavorite = (id) => {
           </div>
         </div>
       </main>
-      <GameModal game={selectedGame} onClose={()=> setSelectedGame(null)}/>
+      <GameModal game={selectedGame} onClose={() => setSelectedGame(null)}/>
     </div>
   );
 }
